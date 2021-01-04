@@ -24,6 +24,12 @@ app.use('/', ProfileData)
 
 app.use(expressJwt({ secret: 'mean-secret' }).unless({ path: [authData, ProfileData] }));
 
-app.listen(5000, function () {
-    console.log('Server is running..');
-}); 
+server.listen(8000, '127.0.0.1', function () {
+    server.close(function () {
+        server.listen(8001, '192.168.1.177')
+    })
+})
+
+// app.listen(5000, function () {
+//     console.log('Server is running..');
+// }); 

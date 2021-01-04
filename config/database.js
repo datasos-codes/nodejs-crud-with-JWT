@@ -3,10 +3,10 @@
 const sql = require('mssql')
 
 const config = {
-    user: 'your-user-name',
+    user: 'your-username',
     password: 'your-password',
-    server: "your-server-name",
-    database: "your-database-name",
+    server: "your-servername",
+    database: "your-databasename",
     options: {
         "encrypt": false,
         "enableArithAbort": false
